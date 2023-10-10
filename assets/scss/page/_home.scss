@@ -1,0 +1,140 @@
+@import "../layouts/header";
+@import "../layouts/footer";
+body{
+    background-color: $dark-color;
+}
+main{
+    h1{
+        font-weight: 800;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .hero{
+        margin-bottom: 30px;
+        .container{
+            .bigCard{
+                overflow: hidden;
+                background-color: $secondary-color;
+                border-radius: 10px;
+                padding: 50px 65px;
+                .leftCard{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 100%;
+                        @media only screen and (max-width: 992px) {
+                            width: 50%;
+                        }
+                    }
+                    @media only screen and (max-width: 992px) {
+                        margin-bottom: 20px;
+                    }
+                }
+                .rightCard{
+                    .cardHeading{
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+                        @media only screen and (max-width: 992px) {
+                            justify-content: center;
+                        }
+                        h2{
+                            font-size: 24px;
+                            font-weight: 800;
+                        }
+                    }
+                    button{
+                        @include btn($primary-color);
+                    }
+                    ul{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 10px;
+                        li{
+                            font-size: 16px;
+                            font-weight: 700;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            i{
+                                color: $primary-color;
+                                font-size: 32px;
+                            }
+                            .sans-serif{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 25px;
+                        line-height: 25px;
+                    }
+                }
+                @media only screen and (max-width: 992px) {
+                    padding: 30px 40px;
+                }
+            }
+        }
+    }
+    .debetCards,.otherCards{
+        margin-bottom: 30px;
+        .row>div{
+            padding: 0 15px ;
+            .card{
+                overflow: hidden;
+                padding: 45px 65px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                background-color: $secondary-color;
+                .topCard{
+                    margin-bottom: 40px;
+                    img{
+                        border-radius: 20px;
+                        width: 70%;
+                        @media only screen and (max-width: 992px) {
+                            width: 100%;
+                        }
+                    }
+                }
+                .bottomCard{
+                    display: flex;
+                    
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                    h2{
+                        font-size: 24px;
+                        font-weight: 800;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 50px;
+                        line-height: 25px;
+                    }
+                    button{
+                        @include btn($primary-color);
+                    }
+                    .buttons{
+                        display: flex;
+                        gap: 10px;
+                        button{
+                            &:last-child{
+                                @include btn(#0000,$light-color);
+
+                            }
+                        }
+                    }
+                }
+                @media only screen and (max-width: 992px) {
+                    padding: 25px 40px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

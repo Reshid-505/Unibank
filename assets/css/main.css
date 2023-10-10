@@ -1,0 +1,420 @@
+footer .topFooter .links li, header .container .call, header .container .menuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Extrabold-Italic-trial.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Bold-Italic-trial.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Bold-trial.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Extralight-Italic-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Extrabold-trial.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Extralight-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Heavy-Italic-trial.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Heavy-trial.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Light-Italic-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Italic-trial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Regular-trial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CocoSharp";
+  src: url("../../../assets/fonts/Coco-Sharp-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  color: #FFFFFF;
+  font-family: "CocoSharp";
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 10px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .menuIcon {
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 20px;
+}
+header .container img {
+  width: 50%;
+}
+header .container ul {
+  align-items: center;
+}
+header .container ul li {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 30px 15px;
+  font-size: 18px;
+}
+header .container ul li:first-child {
+  padding-left: 0;
+}
+header .container .call {
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 992px) {
+  header .container .call {
+    background-color: rgba(255, 255, 255, 0.1019607843);
+    border: none;
+  }
+}
+header .container .call i {
+  color: #FF6400;
+}
+
+footer {
+  padding: 40px;
+}
+footer .topFooter .lists .row > div h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+footer .topFooter .lists .row > div ul li {
+  font-size: 12px;
+  line-height: 35px;
+}
+footer .topFooter .links {
+  display: flex;
+  gap: 12px;
+}
+footer .topFooter .links li {
+  width: 24px;
+  height: 24px;
+  background-color: #A1A1A1;
+  border-radius: 50%;
+}
+footer .topFooter .links li i {
+  color: #000000;
+}
+footer .topFooter .links li:nth-child(1), footer .topFooter .links li:nth-child(2) {
+  background-color: #FF6400;
+}
+footer .topFooter hr {
+  border: none;
+  border-top: 2px solid #FFFFFF;
+}
+footer .bottomFooter h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+footer .bottomFooter p {
+  font-size: 12px;
+}
+footer .bottomFooter .rightSide {
+  display: flex;
+}
+footer .bottomFooter .rightSide img {
+  padding: 0 10px;
+  width: 25%;
+}
+
+body {
+  background-color: #000000;
+}
+
+main h1 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+main .hero {
+  margin-bottom: 30px;
+}
+main .hero .container .bigCard {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  border-radius: 10px;
+  padding: 50px 65px;
+}
+main .hero .container .bigCard .leftCard {
+  display: flex;
+  justify-content: center;
+}
+main .hero .container .bigCard .leftCard img {
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  main .hero .container .bigCard .leftCard img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .hero .container .bigCard .leftCard {
+    margin-bottom: 20px;
+  }
+}
+main .hero .container .bigCard .rightCard .cardHeading {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+@media only screen and (max-width: 992px) {
+  main .hero .container .bigCard .rightCard .cardHeading {
+    justify-content: center;
+  }
+}
+main .hero .container .bigCard .rightCard .cardHeading h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+main .hero .container .bigCard .rightCard button {
+  background-color: #FF6400;
+  border: 1px solid #FF6400;
+  padding: 14px 30px;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  font-weight: 600;
+  white-space: wrap;
+}
+main .hero .container .bigCard .rightCard ul {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+main .hero .container .bigCard .rightCard ul li {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .hero .container .bigCard .rightCard ul li i {
+  color: #FF6400;
+  font-size: 32px;
+}
+main .hero .container .bigCard .rightCard ul li .sans-serif {
+  font-weight: 700;
+}
+main .hero .container .bigCard .rightCard p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+@media only screen and (max-width: 992px) {
+  main .hero .container .bigCard {
+    padding: 30px 40px;
+  }
+}
+main .debetCards, main .otherCards {
+  margin-bottom: 30px;
+}
+main .debetCards .row > div, main .otherCards .row > div {
+  padding: 0 15px;
+}
+main .debetCards .row > div .card, main .otherCards .row > div .card {
+  overflow: hidden;
+  padding: 45px 65px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+}
+main .debetCards .row > div .card .topCard, main .otherCards .row > div .card .topCard {
+  margin-bottom: 40px;
+}
+main .debetCards .row > div .card .topCard img, main .otherCards .row > div .card .topCard img {
+  border-radius: 20px;
+  width: 70%;
+}
+@media only screen and (max-width: 992px) {
+  main .debetCards .row > div .card .topCard img, main .otherCards .row > div .card .topCard img {
+    width: 100%;
+  }
+}
+main .debetCards .row > div .card .bottomCard, main .otherCards .row > div .card .bottomCard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+main .debetCards .row > div .card .bottomCard h2, main .otherCards .row > div .card .bottomCard h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+main .debetCards .row > div .card .bottomCard p, main .otherCards .row > div .card .bottomCard p {
+  font-size: 14px;
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+main .debetCards .row > div .card .bottomCard button, main .otherCards .row > div .card .bottomCard button {
+  background-color: #FF6400;
+  border: 1px solid #FF6400;
+  padding: 14px 30px;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  font-weight: 600;
+  white-space: wrap;
+}
+main .debetCards .row > div .card .bottomCard .buttons, main .otherCards .row > div .card .bottomCard .buttons {
+  display: flex;
+  gap: 10px;
+}
+main .debetCards .row > div .card .bottomCard .buttons button:last-child, main .otherCards .row > div .card .bottomCard .buttons button:last-child {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  padding: 14px 30px;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  font-weight: 600;
+  white-space: wrap;
+}
+@media only screen and (max-width: 992px) {
+  main .debetCards .row > div .card, main .otherCards .row > div .card {
+    padding: 25px 40px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */

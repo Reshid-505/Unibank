@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Extrabold-Italic-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Bold-Italic-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Bold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Extralight-Italic-trial.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Extrabold-trial.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Extralight-trial.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Heavy-Italic-trial.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Heavy-trial.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Light-Italic-trial.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Italic-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CocoSharp';
+    src: url('../../../assets/fonts/Coco-Sharp-Light-trial.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    color: $light-color;
+    font-family: "CocoSharp";
+}
+.sans-serif{
+    font-family: sans-serif;
+}

@@ -1,0 +1,46 @@
+header{
+    padding: 10px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menuIcon{
+            @extend %flex-center; 
+            background-color: #FFFFFF1A;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            padding: 20px;
+        }
+        img{
+            width: 50%;
+        }
+        ul{
+            align-items: center;
+            li{
+                cursor: pointer;
+                font-weight: 600;
+                padding: 30px 15px;
+                font-size: 18px;
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+        }
+        .call{
+            @extend %flex-center;
+            height: 45px;
+            border: 1px solid $light-color;
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 50px;
+            @media only screen and (max-width: 992px) {
+                background-color: #FFFFFF1A;
+                border: none;
+              }
+            i{
+                color: $primary-color;
+            }
+        }
+    }
+}
